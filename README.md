@@ -3,7 +3,7 @@
 A module to change the style of matplotlib legends. Texts in legends are color-coded according to the corresponding lines/scatters. Markers and lines 
 are removed from legends.
 
-![An Example]{https://raw.githubusercontent.com/roundhead/colorlegend/master/example/example.png}
+![An Example](https://raw.githubusercontent.com/roundhead/colorlegend/master/example/example.png)
 
 ## Install
 

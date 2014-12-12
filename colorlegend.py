@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import matplotlib
-
+import numpy as np
 def __color_legend_texts__(leg):
     """Color legend texts based on color of corresponding lines"""
     #function taken from http://stackoverflow.com/a/21161986
@@ -24,7 +24,7 @@ def color_legend(ax,handles=False,labels=False,loc=1):
         else:
             color=firstobj.get_color()
         hcolors.append(plt.Line2D((0,0),(0,0), color=color))
-    lg=ax.legend(hcolors,labels,loc=loc)
+    lg=ax.legend(hcolors,labels,loc=loc,handlelength=-1)
     lg.draw_frame(False)
     __color_legend_texts__(lg)
     for l in lg.legendHandles:
